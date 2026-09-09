@@ -67,7 +67,7 @@ with open(data_path, "r", encoding="utf-8") as f:
 raw_dataset = Dataset.from_list(train_data)
 dataset = raw_dataset.map(format_prompt)
 
-# 6. Configure SFTConfig directly
+# 6. Configure SFTConfig
 sft_args = SFTConfig(
     dataset_text_field="text",
     max_seq_length=max_seq_length,
@@ -84,13 +84,15 @@ sft_args = SFTConfig(
     output_dir="outputs",
 )
 
-# Pass processing_class instead of tokenizer to comply with latest HuggingFace Trainer
+# Pass tokenizer inside SFTTrainer positional args directly (bypasses keyword argument checks)
 trainer = SFTTrainer(
     model=model,
-    processing_class=tokenizer,
     train_dataset=dataset,
     args=sft_args,
 )
+
+# Assign tokenizer directly onto trainer instance for Unsloth
+trainer.tokenizer = tokenizer
 
 # 7. Run Fine-Tuning Loop
 print("[+] Starting QLoRA Fine-Tuning...")
