@@ -67,7 +67,7 @@ with open(data_path, "r", encoding="utf-8") as f:
 raw_dataset = Dataset.from_list(train_data)
 dataset = raw_dataset.map(format_prompt)
 
-# 6. Configure SFTConfig directly (fixes TRL AttributeError)
+# 6. Configure SFTConfig directly
 sft_args = SFTConfig(
     dataset_text_field="text",
     max_seq_length=max_seq_length,
@@ -84,9 +84,10 @@ sft_args = SFTConfig(
     output_dir="outputs",
 )
 
+# Pass processing_class instead of tokenizer to comply with latest HuggingFace Trainer
 trainer = SFTTrainer(
     model=model,
-    tokenizer=tokenizer,
+    processing_class=tokenizer,
     train_dataset=dataset,
     args=sft_args,
 )
