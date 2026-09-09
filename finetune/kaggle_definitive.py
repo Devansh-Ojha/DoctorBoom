@@ -1,16 +1,22 @@
 import os
 import json
 import torch
+import gc
 from datasets import Dataset
 from unsloth import FastLanguageModel, is_bfloat16_supported
 from trl import SFTTrainer, SFTConfig
 
-# 1. Environment Configuration
+# 1. Memory Optimization Environment Configuration
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["ACCELERATE_TORCH_DEVICE"] = "cuda:0"
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
-# 2. Load Model and Tokenizer
-max_seq_length = 2048
+# Clear residual VRAM memory allocations
+gc.collect()
+torch.cuda.empty_cache()
+
+# 2. Load Model in 4-bit with reduced sequence length
+max_seq_length = 1024  # Reduced from 2048 to prevent VRAM OOM
 model_name = "Qwen/Qwen2.5-Coder-7B-Instruct"
 
 print("[+] Loading Qwen2.5-Coder-7B in 4-bit...")
@@ -40,7 +46,7 @@ model = FastLanguageModel.get_peft_model(
     use_gradient_checkpointing="unsloth",
 )
 
-# 4. Prompt Formatting Function (Native SFTTrainer string formatting)
+# 4. Prompt Formatting Function
 def format_prompts(examples):
     texts = []
     for subject, body, changed_files, diff in zip(
@@ -73,14 +79,14 @@ with open(data_path, "r", encoding="utf-8") as f:
 raw_dataset = Dataset.from_list(train_data)
 dataset = raw_dataset.map(format_prompts, batched=True)
 
-# 6. SFTConfig with dataset_text_field
+# 6. SFTConfig Optimized for Low VRAM (Batch size 1, 8 Grad Accumulation)
 sft_config = SFTConfig(
     dataset_text_field="text",
     max_seq_length=max_seq_length,
     dataset_num_proc=2,
     packing=False,
-    per_device_train_batch_size=2,
-    gradient_accumulation_steps=4,
+    per_device_train_batch_size=1,        # Reduced from 2 to 1 (uses 50% less VRAM!)
+    gradient_accumulation_steps=8,         # Maintained effective batch size (1 x 8 = 8)
     warmup_steps=5,
     max_steps=60,
     learning_rate=2e-4,
@@ -90,7 +96,7 @@ sft_config = SFTConfig(
     output_dir="outputs",
 )
 
-# Initialize SFTTrainer (HF standard)
+# Initialize SFTTrainer
 trainer = SFTTrainer(
     model=model,
     train_dataset=dataset,
