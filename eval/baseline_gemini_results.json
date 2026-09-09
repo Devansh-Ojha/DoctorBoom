@@ -1,0 +1,327 @@
+{
+  "model": "Free Local General Baseline",
+  "total_tasks": 16,
+  "total_wall_clock_sec": 0.00020813941955566406,
+  "results": [
+    {
+      "task_id": "0bae91b0613cbeae8b503373feb8d20782e3d58f",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: more name suggestion to fix MIM for hbwif\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: more name suggestion to fix MIM for hbwif\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: more name suggestion to fix MIM for hbwif\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 6.9141387939453125e-06
+    },
+    {
+      "task_id": "0e4af6df500287d7ea0e934d99197e162da69855",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Move HasDebugModule out of TileContextType\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Move HasDebugModule out of TileContextType\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Move HasDebugModule out of TileContextType\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 4.0531158447265625e-06
+    },
+    {
+      "task_id": "d2c1bdc2ce8a53da85a158e254683485d3f565d1",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Debug Controls (#639)\n\n* debug: Bump OpenOCD version to one that drives resets and sets cmderr appropriately.\n\n* debug: ...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Debug Controls (#639)\n\n* debug: Bump OpenOCD version to one that drives resets and sets cmderr appropriately.\n\n* debug: ...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Debug Controls (#639)\n\n* debug: Bump OpenOCD version to one that drives resets and sets cmderr appropriately.\n\n* debug: ...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 3.814697265625e-06
+    },
+    {
+      "task_id": "e8c8d2af7141102adf8ccc65b929e740ce7ce189",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Heterogeneous Tiles (#550)\n\nFundamental new features:\n\n* Added tile package: This package is intended to hold components...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Heterogeneous Tiles (#550)\n\nFundamental new features:\n\n* Added tile package: This package is intended to hold components...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Heterogeneous Tiles (#550)\n\nFundamental new features:\n\n* Added tile package: This package is intended to hold components...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 3.0994415283203125e-06
+    },
+    {
+      "task_id": "60522fa602acbbbc12ab7359c7287c85ed9cba6e",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Bump to Chisel v3.3.0-RC3 and FIRRTL v1.3.0-RC3\n\n* Update some uses of @chiselName to disable new prefixing behavior\n* U...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Bump to Chisel v3.3.0-RC3 and FIRRTL v1.3.0-RC3\n\n* Update some uses of @chiselName to disable new prefixing behavior\n* U...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Bump to Chisel v3.3.0-RC3 and FIRRTL v1.3.0-RC3\n\n* Update some uses of @chiselName to disable new prefixing behavior\n* U...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 2.1457672119140625e-06
+    },
+    {
+      "task_id": "676d68b233a3fdc8160c5984d34bdba8ce1baaba",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fix compile for chisel5\n\n1. remove Cat from util chipsalliance/chisel#3062\n2. remove experimental.IO chipsalliance/chise...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fix compile for chisel5\n\n1. remove Cat from util chipsalliance/chisel#3062\n2. remove experimental.IO chipsalliance/chise...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fix compile for chisel5\n\n1. remove Cat from util chipsalliance/chisel#3062\n2. remove experimental.IO chipsalliance/chise...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 3.0994415283203125e-06
+    },
+    {
+      "task_id": "e22b01a6faa726f7248d7dcecaaea191197dcfca",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: jtag_dtm: Update regression to run and pass.\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: jtag_dtm: Update regression to run and pass.\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: jtag_dtm: Update regression to run and pass.\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 1.9073486328125e-06
+    },
+    {
+      "task_id": "9dbc6a430ed00d204f3db766bfec9ec9d1d55de5",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fix compile for chisel3.6\n\n- remove experimental.IO chipsalliance/chisel#2863\n- remove bracket for fire()\n- remove Chise...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fix compile for chisel3.6\n\n- remove experimental.IO chipsalliance/chisel#2863\n- remove bracket for fire()\n- remove Chise...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fix compile for chisel3.6\n\n- remove experimental.IO chipsalliance/chisel#2863\n- remove bracket for fire()\n- remove Chise...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 2.6226043701171875e-06
+    },
+    {
+      "task_id": "3dd51ff7341a99a9b26f7341a63fb92a8748f42a",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: This commit adds Logic & test support for JTAG implementation of Debug Transport Module.\n\n- The DebugTransportModuleJtag...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: This commit adds Logic & test support for JTAG implementation of Debug Transport Module.\n\n- The DebugTransportModuleJtag...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: This commit adds Logic & test support for JTAG implementation of Debug Transport Module.\n\n- The DebugTransportModuleJtag...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 1.9073486328125e-06
+    },
+    {
+      "task_id": "26a18fa60e96daa1bfc0229630d25a60d700c0bf",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Bump to Chisel v3.3.0 and FIRRTL v1.3.0\n\n* Update some uses of @chiselName to disable new prefixing behavior\n* Update St...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Bump to Chisel v3.3.0 and FIRRTL v1.3.0\n\n* Update some uses of @chiselName to disable new prefixing behavior\n* Update St...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Bump to Chisel v3.3.0 and FIRRTL v1.3.0\n\n* Update some uses of @chiselName to disable new prefixing behavior\n* Update St...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 3.0994415283203125e-06
+    },
+    {
+      "task_id": "487d0b356eebc7f80eb549174b8c14ec37ebccd1",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fixes to get groundtest working with priv-1.9 changes\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fixes to get groundtest working with priv-1.9 changes\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fixes to get groundtest working with priv-1.9 changes\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 3.0994415283203125e-06
+    },
+    {
+      "task_id": "ca9a5a1cf74ee02dbc1a8b746d5c136669d060c8",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: debug: Fixes in how the SimDTM was hooked up to FESVR\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: debug: Fixes in how the SimDTM was hooked up to FESVR\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: debug: Fixes in how the SimDTM was hooked up to FESVR\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 1.9073486328125e-06
+    },
+    {
+      "task_id": "bbeb2578c3ba04e16711ea370c28ab1357d8bed0",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fixing aspect generation (#2309)\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fixing aspect generation (#2309)\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: fixing aspect generation (#2309)\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 2.1457672119140625e-06
+    },
+    {
+      "task_id": "75347eed56799e4660b6e5abb9f2e8a1b6abe24b",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: some fixes and cleanup to stateless bridge\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: some fixes and cleanup to stateless bridge\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: some fixes and cleanup to stateless bridge\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 3.0994415283203125e-06
+    },
+    {
+      "task_id": "6c762f3e90f130a6d8669cbcc8503692f7613b17",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Doc fixes and add comments to axi4 bundles (#2925)\n\n* Fix typo: priviledged -> privileged\n\nThis incurs a small breaking ...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Doc fixes and add comments to axi4 bundles (#2925)\n\n* Fix typo: priviledged -> privileged\n\nThis incurs a small breaking ...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Doc fixes and add comments to axi4 bundles (#2925)\n\n* Fix typo: priviledged -> privileged\n\nThis incurs a small breaking ...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 2.1457672119140625e-06
+    },
+    {
+      "task_id": "9c164a9f13e04d4df6b2f3cd511443c1a0c65d71",
+      "resolved": false,
+      "iterations_used": 3,
+      "history": [
+        {
+          "iteration": 1,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Minor cleanup and bugfixes; simulation works now\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 2,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Minor cleanup and bugfixes; simulation works now\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        },
+        {
+          "iteration": 3,
+          "patch": "### Baseline General Diagnosis\nTarget hardware trace analyzed: Minor cleanup and bugfixes; simulation works now\n\n...\n\n### Proposed Hardware Patch Diff\n```diff\n--- a/src/main/scala/rocket/Rocket.scala\n+++ b/src/main/scala/rocket/Rocket.scala\n@@ -10,3 +10,3 @@\n-  val io = IO(new Bundle)\n+  val io = IO(new RocketCoreBundle)\n```\n"
+        }
+      ],
+      "wall_clock_sec": 3.0994415283203125e-06
+    }
+  ]
+}
