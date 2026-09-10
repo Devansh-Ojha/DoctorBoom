@@ -1,1 +1,6 @@
 venv/
+rocket-chip/
+__pycache__/
+*.pyc
+.DS_Store
+outputs/
